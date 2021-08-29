@@ -1,3 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-rows: 20vh calc(100% - 30vh) 10vh;
+  grid-template-areas: "h h" "m a" "f f"; }
+  .container header {
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "logo menu"; }
+    .container header .logo {
+      grid-area: logo; }
+    .container header .menu {
+      grid-area: menu;
+      display: grid;
+      grid-auto-rows: 60% 40%;
+      grid-template-areas: "title" "itens"; }
+      .container header .menu .title {
+        grid-area: title; }
+      .container header .menu .itens {
+        grid-area: itens; }
+  .container main {
+    grid-area: m; }
+  .container aside {
+    grid-area: a; }
+  .container footer {
+    grid-area: f; }
+
+.btn {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: #666;
+  color: #FFF;
+  font-size: 1em;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
+  .btn:hover {
+    background-color: gray; }
+
+.btn-green {
+  background-color: #36BA9B;
+  color: #FFFFFF; }
+  .btn-green:hover {
+    background-color: #55ceb1; }
+
+.btn-blue {
+  background-color: #39AED9;
+  color: #FFFFFF; }
+  .btn-blue:hover {
+    background-color: #64c0e1; }
+
+.btn-yellow {
+  background-color: #F5B946;
+  color: #FFFFFF; }
+  .btn-yellow:hover {
+    background-color: #f8cb76; }
+
+.btn-red {
+  background-color: #ff001a;
+  color: #FFFFFF; }
+  .btn-red:hover {
+    background-color: #ff3348; }
+
+.btn-orange {
+  background-color: #F4645F;
+  color: #FFFFFF; }
+  .btn-orange:hover {
+    background-color: #f7928f; }
+
+.title-green {
+  color: #36BA9B; }
+
+.title-blue {
+  color: #39AED9; }
+
+.title-yellow {
+  color: #F5B946; }
+
+.title-red {
+  color: #ff001a; }
+
+.title-orange {
+  color: #F4645F; }
+
+.p-0, .pb-0, .py-0 {
+  padding-bottom: 0; }
+
+.p-0, .pt-0, .py-0 {
+  padding-top: 0; }
+
+.p-0, .pl-0, .px-0 {
+  padding-left: 0; }
+
+.p-0, .pr-0, .px-0 {
+  padding-right: 0; }
+
+.m-0, .mb-0, .my-0 {
+  margin-bottom: 0; }
+
+.m-0, .mt-0, .my-0 {
+  margin-top: 0; }
+
+.m-0, .ml-0, .mx-0 {
+  margin-left: 0; }
+
+.m-0, .mr-0, .mx-0 {
+  margin-right: 0; }
+
+.p-1, .pb-1, .py-1 {
+  padding-bottom: 0.75rem; }
+
+.p-1, .pt-1, .py-1 {
+  padding-top: 0.75rem; }
+
+.p-1, .pl-1, .px-1 {
+  padding-left: 0.75rem; }
+
+.p-1, .pr-1, .px-1 {
+  padding-right: 0.75rem; }
+
+.m-1, .mb-1, .my-1 {
+  margin-bottom: 0.75rem; }
+
+.m-1, .mt-1, .my-1 {
+  margin-top: 0.75rem; }
+
+.m-1, .ml-1, .mx-1 {
+  margin-left: 0.75rem; }
+
+.m-1, .mr-1, .mx-1 {
+  margin-right: 0.75rem; }
+
+.p-2, .pb-2, .py-2 {
+  padding-bottom: 1.5rem; }
+
+.p-2, .pt-2, .py-2 {
+  padding-top: 1.5rem; }
+
+.p-2, .pl-2, .px-2 {
+  padding-left: 1.5rem; }
+
+.p-2, .pr-2, .px-2 {
+  padding-right: 1.5rem; }
+
+.m-2, .mb-2, .my-2 {
+  margin-bottom: 1.5rem; }
+
+.m-2, .mt-2, .my-2 {
+  margin-top: 1.5rem; }
+
+.m-2, .ml-2, .mx-2 {
+  margin-left: 1.5rem; }
+
+.m-2, .mr-2, .mx-2 {
+  margin-right: 1.5rem; }
+
+.p-3, .pb-3, .py-3 {
+  padding-bottom: 3rem; }
+
+.p-3, .pt-3, .py-3 {
+  padding-top: 3rem; }
+
+.p-3, .pl-3, .px-3 {
+  padding-left: 3rem; }
+
+.p-3, .pr-3, .px-3 {
+  padding-right: 3rem; }
+
+.m-3, .mb-3, .my-3 {
+  margin-bottom: 3rem; }
+
+.m-3, .mt-3, .my-3 {
+  margin-top: 3rem; }
+
+.m-3, .ml-3, .mx-3 {
+  margin-left: 3rem; }
+
+.m-3, .mr-3, .mx-3 {
+  margin-right: 3rem; }
+
+.p-4, .pb-4, .py-4 {
+  padding-bottom: 3.75rem; }
+
+.p-4, .pt-4, .py-4 {
+  padding-top: 3.75rem; }
+
+.p-4, .pl-4, .px-4 {
+  padding-left: 3.75rem; }
+
+.p-4, .pr-4, .px-4 {
+  padding-right: 3.75rem; }
+
+.m-4, .mb-4, .my-4 {
+  margin-bottom: 3.75rem; }
+
+.m-4, .mt-4, .my-4 {
+  margin-top: 3.75rem; }
+
+.m-4, .ml-4, .mx-4 {
+  margin-left: 3.75rem; }
+
+.m-4, .mr-4, .mx-4 {
+  margin-right: 3.75rem; }
+
+.p-5, .pb-5, .py-5 {
+  padding-bottom: 6rem; }
+
+.p-5, .pt-5, .py-5 {
+  padding-top: 6rem; }
+
+.p-5, .pl-5, .px-5 {
+  padding-left: 6rem; }
+
+.p-5, .pr-5, .px-5 {
+  padding-right: 6rem; }
+
+.m-5, .mb-5, .my-5 {
+  margin-bottom: 6rem; }
+
+.m-5, .mt-5, .my-5 {
+  margin-top: 6rem; }
+
+.m-5, .ml-5, .mx-5 {
+  margin-left: 6rem; }
+
+.m-5, .mr-5, .mx-5 {
+  margin-right: 6rem; }
+
+.p-auto, .pb-auto, .py-auto {
+  padding-bottom: auto; }
+
+.p-auto, .pt-auto, .py-auto {
+  padding-top: auto; }
+
+.p-auto, .pl-auto, .px-auto {
+  padding-left: auto; }
+
+.p-auto, .pr-auto, .px-auto {
+  padding-right: auto; }
+
+.m-auto, .mb-auto, .my-auto {
+  margin-bottom: auto; }
+
+.m-auto, .mt-auto, .my-auto {
+  margin-top: auto; }
+
+.m-auto, .ml-auto, .mx-auto {
+  margin-left: auto; }
+
+.m-auto, .mr-auto, .mx-auto {
+  margin-right: auto; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px; }
+  .container header .menu .itens ul {
+    display: flex;
+    justify-content: space-evenly; }
+    .container header .menu .itens ul li {
+      list-style: none; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,36 @@
+$width-content: 1081px;
+$color-primary: #3E8EBB;
+$button-hover-type: 'lighten';
+$button-hover-amount: 10%;
+$spacer: 3rem;
+
+$color-green: #36BA9B;
+$color-blue: #39AED9;
+$color-yellow: #F5B946;
+//$color-red: #D94352;
+$color-red: #ff001a;
+$color-orange: #F4645F;
+
+$theme-colors: () !default;
+$theme-colors: map_merge(
+                (
+                        "green": $color-green,
+                        "blue": $color-blue,
+                        "yellow": $color-yellow,
+                        "red": $color-red,
+                        "orange": $color-orange,
+                ), $theme-colors
+);
+
+$spacer-total: () !default;
+$spacer-total: map_merge(
+                (
+                        "0": 0,
+                        "1": $spacer*0.25,
+                        "2": $spacer*0.5,
+                        "3": $spacer,
+                        "4": $spacer*1.25,
+                        "5": $spacer*2,
+                        "auto": auto,
+                ), $spacer-total
+)

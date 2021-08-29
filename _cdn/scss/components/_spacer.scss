@@ -1,0 +1,26 @@
+@each $spacer, $value in $spacer-total {
+  .p-#{$spacer}, .pb-#{$spacer}, .py-#{$spacer} {
+    padding-bottom: ($value);
+  }
+  .p-#{$spacer}, .pt-#{$spacer}, .py-#{$spacer} {
+    padding-top: ($value);
+  }
+  .p-#{$spacer}, .pl-#{$spacer}, .px-#{$spacer} {
+    padding-left: ($value);
+  }
+  .p-#{$spacer}, .pr-#{$spacer}, .px-#{$spacer} {
+    padding-right: ($value);
+  }
+  .m-#{$spacer}, .mb-#{$spacer}, .my-#{$spacer} {
+    margin-bottom: ($value);
+  }
+  .m-#{$spacer}, .mt-#{$spacer}, .my-#{$spacer} {
+    margin-top: ($value);
+  }
+  .m-#{$spacer}, .ml-#{$spacer}, .mx-#{$spacer} {
+    margin-left: ($value);
+  }
+  .m-#{$spacer}, .mr-#{$spacer}, .mx-#{$spacer} {
+    margin-right: ($value);
+  }
+}
