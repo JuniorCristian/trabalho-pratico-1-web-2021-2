@@ -3,3 +3,8 @@
     color: $value;
   }
 }
+@each $weigh, $value in $theme-weigh {
+  .title-#{$weigh} {
+    font-weight: $value;
+  }
+}

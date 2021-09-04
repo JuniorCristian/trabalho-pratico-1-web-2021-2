@@ -1,38 +1,58 @@
-.container{
+.container {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-auto-rows: 20vh calc(100% - 30vh) 10vh;
+  grid-auto-rows: 10vh calc(120% - 15vh) 5vh;
   grid-template-areas:  "h h"
-                        "m a"
+                        "m m"
                         "f f";
-  header{
+
+  header {
     grid-area: h;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-areas:  "logo menu";
-    .logo{
+
+    .logo {
       grid-area: logo;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .menu{
+
+    .menu {
       grid-area: menu;
-      display: grid;
-      grid-auto-rows: 60% 40%;
-      grid-template-areas:  "title" "itens";
-      .title{
-        grid-area: title;
-      }
-      .itens{
+      .itens {
         grid-area: itens;
       }
     }
   }
-  main{
+
+  main {
     grid-area: m;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-auto-rows: 50% 50%;
+    grid-template-areas:  "fazemos fazemos"
+                          "somos fale";
+
+    .oq_fazemos {
+      grid-area: fazemos;
+    }
+
+    .qm_somos {
+      grid-area: somos;
+    }
+
+    .fale_conosoco {
+      grid-area: fale;
+    }
   }
-  aside{
+
+  aside {
     grid-area: a;
   }
-  footer{
+
+  footer {
     grid-area: f;
   }
 }

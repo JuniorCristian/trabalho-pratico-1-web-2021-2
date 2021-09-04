@@ -1,25 +1,37 @@
 $width-content: 1081px;
 $color-primary: #3E8EBB;
-$button-hover-type: 'lighten';
+$button-hover-type: 'darken';
 $button-hover-amount: 10%;
 $spacer: 3rem;
 
-$color-green: #36BA9B;
-$color-blue: #39AED9;
-$color-yellow: #F5B946;
-//$color-red: #D94352;
-$color-red: #ff001a;
-$color-orange: #F4645F;
+$color-primary: #003950;
+$color-white: #FFF;
+$color-ligth: #f3f3f3;
 
 $theme-colors: () !default;
 $theme-colors: map_merge(
                 (
-                        "green": $color-green,
-                        "blue": $color-blue,
-                        "yellow": $color-yellow,
-                        "red": $color-red,
-                        "orange": $color-orange,
+                        "primary": $color-primary,
+                        "white": $color-white,
+                        "ligth": $color-ligth,
                 ), $theme-colors
+);
+
+$theme-weigh: () !default;
+$theme-weigh: map_merge(
+                (
+                        "100": 100,
+                        "200": 200,
+                        "300": 300,
+                        "400": 400,
+                        "500": 500,
+                        "600": 600,
+                        "700": 700,
+                        "800": 800,
+                        "900": 900,
+                        "bold": bold,
+                        "bolder": bolder,
+                ), $theme-weigh
 );
 
 $spacer-total: () !default;

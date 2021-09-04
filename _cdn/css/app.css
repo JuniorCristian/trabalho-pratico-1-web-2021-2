@@ -10,26 +10,34 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-auto-rows: 20vh calc(100% - 30vh) 10vh;
-  grid-template-areas: "h h" "m a" "f f"; }
+  grid-auto-rows: 10vh calc(120% - 15vh) 5vh;
+  grid-template-areas: "h h" "m m" "f f"; }
   .container header {
     grid-area: h;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-areas: "logo menu"; }
     .container header .logo {
-      grid-area: logo; }
+      grid-area: logo;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .container header .menu {
-      grid-area: menu;
-      display: grid;
-      grid-auto-rows: 60% 40%;
-      grid-template-areas: "title" "itens"; }
-      .container header .menu .title {
-        grid-area: title; }
+      grid-area: menu; }
       .container header .menu .itens {
         grid-area: itens; }
   .container main {
-    grid-area: m; }
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-auto-rows: 50% 50%;
+    grid-template-areas: "fazemos fazemos" "somos fale"; }
+    .container main .oq_fazemos {
+      grid-area: fazemos; }
+    .container main .qm_somos {
+      grid-area: somos; }
+    .container main .fale_conosoco {
+      grid-area: fale; }
   .container aside {
     grid-area: a; }
   .container footer {
@@ -45,55 +53,69 @@ html, body {
   font-size: 1em;
   outline: none;
   border: 0;
-  cursor: pointer;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
+  cursor: pointer; }
   .btn:hover {
-    background-color: gray; }
+    background-color: #4d4d4d; }
 
-.btn-green {
-  background-color: #36BA9B;
+.btn-primary {
+  background-color: #003950;
   color: #FFFFFF; }
-  .btn-green:hover {
-    background-color: #55ceb1; }
+  .btn-primary:hover {
+    background-color: #00151d; }
 
-.btn-blue {
-  background-color: #39AED9;
+.btn-white {
+  background-color: #FFF;
   color: #FFFFFF; }
-  .btn-blue:hover {
-    background-color: #64c0e1; }
+  .btn-white:hover {
+    background-color: #e6e6e6; }
 
-.btn-yellow {
-  background-color: #F5B946;
+.btn-ligth {
+  background-color: #f3f3f3;
   color: #FFFFFF; }
-  .btn-yellow:hover {
-    background-color: #f8cb76; }
+  .btn-ligth:hover {
+    background-color: #dadada; }
 
-.btn-red {
-  background-color: #ff001a;
-  color: #FFFFFF; }
-  .btn-red:hover {
-    background-color: #ff3348; }
+.title-primary {
+  color: #003950; }
 
-.btn-orange {
-  background-color: #F4645F;
-  color: #FFFFFF; }
-  .btn-orange:hover {
-    background-color: #f7928f; }
+.title-white {
+  color: #FFF; }
 
-.title-green {
-  color: #36BA9B; }
+.title-ligth {
+  color: #f3f3f3; }
 
-.title-blue {
-  color: #39AED9; }
+.title-100 {
+  font-weight: 100; }
 
-.title-yellow {
-  color: #F5B946; }
+.title-200 {
+  font-weight: 200; }
 
-.title-red {
-  color: #ff001a; }
+.title-300 {
+  font-weight: 300; }
 
-.title-orange {
-  color: #F4645F; }
+.title-400 {
+  font-weight: 400; }
+
+.title-500 {
+  font-weight: 500; }
+
+.title-600 {
+  font-weight: 600; }
+
+.title-700 {
+  font-weight: 700; }
+
+.title-800 {
+  font-weight: 800; }
+
+.title-900 {
+  font-weight: 900; }
+
+.title-bold {
+  font-weight: bold; }
+
+.title-bolder {
+  font-weight: bolder; }
 
 .p-0, .pb-0, .py-0 {
   padding-bottom: 0; }
@@ -263,14 +285,79 @@ html, body {
 .m-auto, .mr-auto, .mx-auto {
   margin-right: auto; }
 
+.bg-primary {
+  background-color: #003950; }
+
+.bg-white {
+  background-color: #FFF; }
+
+.bg-ligth {
+  background-color: #f3f3f3; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1300px; }
-  .container header .menu .itens ul {
+  .container header {
+    background-color: #003950; }
+    .container header .logo a {
+      text-decoration: none; }
+    .container header .itens ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .container header .itens ul li {
+        list-style: none;
+        margin-right: 5px; }
+        .container header .itens ul li .nav-link {
+          padding: 8px 32px;
+          text-decoration: none; }
+          .container header .itens ul li .nav-link:hover {
+            background-color: #FFF;
+            color: #003950; }
+        .container header .itens ul li .active {
+          background-color: #FFF;
+          color: #003950; }
+  .container main .oq_fazemos .services {
     display: flex;
     justify-content: space-evenly; }
-    .container header .menu .itens ul li {
-      list-style: none; }
+    .container main .oq_fazemos .services .btn-service {
+      display: block;
+      height: 100px;
+      width: 100px;
+      padding: 20px;
+      border: solid 1px black;
+      cursor: pointer; }
+      .container main .oq_fazemos .services .btn-service:hover {
+        background-color: #e6e6e6; }
+      .container main .oq_fazemos .services .btn-service img {
+        width: 100px;
+        height: 100px; }
+  .container main .qm_somos .toggle_text {
+    color: #003950;
+    cursor: pointer;
+    font-weight: 900; }
+    .container main .qm_somos .toggle_text:hover {
+      text-decoration: underline; }
+  .container main form {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px; }
+    .container main form label {
+      margin-top: 2px;
+      font-size: 15px;
+      color: #666; }
+    .container main form .inputUser {
+      display: flex;
+      justify-content: end;
+      border-radius: 5px;
+      padding: 5px;
+      width: 100%;
+      margin: 5px;
+      border: solid 1px #cecece; }
+  .container footer {
+    font-size: 12px;
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=app.css.map */
